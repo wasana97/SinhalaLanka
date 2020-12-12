@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <title>SinhalaLanka.com</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <!-----NavigationBar---->
+    <section id="nav-bar">
+        <!-- Image and text -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html"><img src="images/1.png" width="70" height="60"> SinhalaLanka</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class=" nav-item">
+                            <a class="nav-link " href="../songs.html">Sinhala Songs</a>
+                        </li>
+                        <li class=" nav-item">
+                            <a class="nav-link " href="../page01.html">Picture Window</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="../friendsclub.html">Firends Club</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="../greeting cards.html">Greeting Cards</a>
+                        </li>
+                        <li class=" nav-item">
+                            <a class="nav-link " href="../Sadaham sisila.html">Sadaham Sisila</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="../contact us.html ">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="../media.html">Radio-Tv</a>
+                        </li>
+                        <li class=" nav-item">
+                            <a class="nav-link " href="http://www.google.com ">Search</a>
+                        </li>
+                    </ul>
+                </div>
+
+        </nav>
+    </section>
+    <br>
+    <hr>
+    <br>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <!---discription box-->
+        <div class="card col-md-3">
+            <img class="card-img-top" src="images/music1.jpg" alt="">
+            <div class="card-body">
+                <h4 class="card-title">Song Description</h4>
+                <h6>Song Title : Yakkuth pitiyata ava</h6>
+                <h6>Artist : Yaka Crew</h6>
+                <h6>Composer : Chanuka Moragoda </h6>
+                <h6>Lyrics : Chanuka Moragoda</h6>
+                <hr>
+                <button class="btn"><i class="fa fa-download"></i> Download</button>
+                <a href="#" class="btn btn-primary">Share</a>
+            </div>
+        </div>
+        <!---comment box-->
+        <div class="container col-md-6">
+            <form name="myform" method="post" onsubmit="return validation();">
+                <br>
+                <br>
+                <div>
+                    <label class="label-control" for="fname">First Name</label>
+                    <input class="form-control" type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <span id="firstname" class="text-danger font-weight-bold"></span>
+                </div>
+                <div>
+                    <label for="lname">Last Name</label>
+                    <input class="form-control" type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <span id="lastname" class="text-danger font-weight-bold"></span>
+                </div>
+                <div>
+                    <label for="ema">Email</label>
+                    <input class="form-control" type="text" id="eml" name="email" placeholder="Your Email..">
+                    <span id="emaill" class="text-danger font-weight-bold"></span>
+                </div>
+                <div>
+                    <label for="contacctno">Contact No</label>
+                    <input class="form-control" type="text" id="cno" name="contactno" placeholder="Your Contact No.. ">
+                    <span id="contact" class="text-danger font-weight-bold "></span>
+                </div>
+                <label for="town ">Town</label>
+                <select class="form-control " id="town " name="town ">
+            <option value="gampaha ">Gampaha</option>
+            <option value="colombo ">Colombo</option>
+            <option value="kurunegala ">Kurunegala</option>
+          </select>
+                <div>
+                    <label for="commensst ">Comment</label>
+                    <textarea class=" form-control " id="comment " name="comment" placeholder="Type your comment here.. " style="height:200px "></textarea>
+                    <span id="comment" class="text-danger font-weight-bold"></span>
+                </div>
+                <br>
+                <button class="btn btn-success " type="submit ">  Submit  </button>
+
+                <br><br>
+                <p class=popuptext id="demo "></p>
+
+            </form>
+
+
+        </div>
+    </div>
+    <script type="text/javascript ">
+        function validation() {
+            var firstname = document.getElementById('fname').value;
+            var lastname = document.getElementById('lname').value;
+            var email = document.getElementById('eml').value;
+            var cn = document.myform.contactno.value;
+            var com = document.myform.comment.value;
+            var x = document.myform.email.value;
+            var atposition = x.indexOf("@");
+            var dotposition = x.lastIndexOf(".");
+
+
+            if (firstname == " ") {
+                document.getElementById('firstname').innerHTML = "** Please fill the firstname ";
+                return false;
+            } else {
+                document.getElementById('firstname').innerHTML = " ";
+            }
+            if ((firstname.length < 3) || (firstname.length > 20)) {
+                document.getElementById('firstname').innerHTML = "** Please fill the firstname between 3 and 20 ";
+                return false;
+            } else {
+                document.getElementById('firstname').innerHTML = " ";
+            }
+
+            if (lastname == " ") {
+                document.getElementById('lastname').innerHTML = "** Please fill the lastname ";
+                return false;
+            } else {
+                document.getElementById('lastname').innerHTML = " ";
+            }
+            if ((lastname.length < 3) || (lastname.length > 20)) {
+                document.getElementById('lastname').innerHTML = "** Please fill the firstname between 3 and 20 ";
+                return false;
+            } else {
+                document.getElementById('lastname').innerHTML = " ";
+            }
+            if (x.length == 0 || (x.indexOf('@') == -1)) {
+                document.getElementById('emaill').innerHTML = "** Please enter valid email (example@example.com)";
+                return false;
+            } else {
+                document.getElementById('emaill').innerHTML = " ";
+            }
+            if ((cn.length < 10)) {
+                document.getElementById('contact').innerHTML = "** Please enter valid Contact Number (10 Digits required) ";
+                return false;
+            } else {
+                document.getElementById('contact').innerHTML = " ";
+            }
+            if ((com.length == 0)) {
+                document.getElementById('comment').innerHTML = "** Please Enter the Comment ";
+                return false;
+            } else {
+                document.getElementById('comment').innerHTML = " ";
+            }
+
+            document.getElementById('lastname').innerHTML = " ";
+            document.getElementById('firstname').innerHTML = " ";
+            document.getElementById('eml').innerHTML = " ";
+            alert("Successfully Submitted");
+            document.getElementById("demo ").innerHTML = "Successfully Submitted";
+            myFunction();
+            //return true;
+        }
+    </script>
+
+    <script>
+        function myFunction() {
+            var txt;
+            if (confirm("Confirm to Submit the Comment! ")) {
+                txt = "Successfully Submited! ";
+            } else {
+                txt = "Cancelled the Submition! ";
+            }
+            document.getElementById("demo ").innerHTML = txt;
+            else {
+                document.getElementById("demo ").innerHTML = " ";
+
+            }
+    </script>
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small mdb-color #00695c ">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left ">
+
+            <!-- Grid row -->
+            <div class="row ">
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1 ">
+
+                    <!-- Content -->
+                    <h5 class="font-weight-bold text-uppercase mb-4 " style="color: white; ">TERMS AND CONDIONS</h5>
+                    <p class="p-color " style="color: antiquewhite; ">Any songs or article in the web site sinhalalanka.com can be removed in any time due to the request of relevant singer or producer of the song.</p>
+                </div>
+
+                <!-- Grid column -->
+                <hr class="clearfix w-100 d-md-none ">
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1 ">
+                    <!-- Contact details -->
+                    <h5 class="font-weight-bold text-uppercase mb-4 " style="color: white; ">Address</h5>
+                    <ul class=" list-unstyled ">
+                        <li>
+                            <p style="color: antiquewhite; "><i class="fa fa-home mr-3 "></i>No 28,Baththaramulla,Sri Lanka.
+                            </p>
+                        </li>
+                        <li>
+                            <p style="color: antiquewhite; "><i class="fa fa-envelope mr-3 "></i>info@sinhalalanka.com</p>
+                        </li>
+                        <li>
+                            <p style="color: antiquewhite; "><i class="fa fa-phone mr-3 "></i>0716397397/0776348590</p>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- Grid column -->
+                <hr class="clearfix w-100 d-md-none ">
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 text-center mx-auto my-4 ">
+                    <!-- Social buttons -->
+                    <h5 class="font-weight-bold text-uppercase mb-4 " style="color: white; ">Follow Us</h5>
+                    <!-- Facebook --><a type=" button " class="btn-floating btn-fb " style="color: antiquewhite; "><i class="fa fa-facebook-f "></i></a>
+                    <!-- Twitter --><a type="button " class="btn-floating btn-tw " style="color: antiquewhite; "><i class="fa fa-twitter "></i></a>
+                    <!-- Google+--><a type="button " class="btn-floating btn-gplus " style="color: antiquewhite; "><i class="fa fa-google-plus-g "></i></a>
+                    <!-- Dribbble --><a type="button " class="btn-floating btn-dribbble " style="color: antiquewhite; "><i class="fa fa-dribbble "></i></a></div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
+        <!-- Copyright -->
+        <!----<div class="footer-copyright text-center py-3 ">© 2020 Copyright : <a href="https://mdbootstrap.com/ ">MDBootstrap.com</a></div>--->
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SinhalaLanka.com</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="reg.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+<style type="text/css">
+
+    	h3{
+    		font-family: lucida Handwriting;
+    		text-align: center;
+    	}
+    
+
+    body{
+
+        background-image: url(image/madu.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+
+  
+
+    #ui{
+
+    background-color:rgba(162, 170, 172, 0.4);
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    opacity: 0.9;
+}
+
+    #ui label,h1{
+        color:rgb(22, 20, 20);
+    }
+
+</style>
+
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+
+    <section id="nav-bar">
+        <!-- Image and text -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="image/s.png" width="80" height="60" alt="" loading="lazy">Sinhalalanaka </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class=" nav-item">
+                            <a class="nav-link " href="songs.html">Sinhala Songs</a>
+                        </li>
+                        <li class=" nav-item">
+                            <a class="nav-link " href="page01.html">Picture Window</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link " href="friendsclub.html">Firends Club</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="greeting cards.html">Greeting Cards</a>
+                        </li>
+                        <li class=" nav-item">
+                            <a class="nav-link " href="Sadaham sisila.html">Sadaham Sisila</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="contact us.html ">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="media.html">Radio-Tv</a>
+                        </li>
+                        <li class=" nav-item">
+                            <a class="nav-link " href="http://www.google.com ">Search</a>
+                        </li>
+                    </ul>
+                </div>
+
+        </nav>
+    </section>
+    <br>
+    <hr>
+    <br>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+               
+                
+                <div id="ui" >
+                    <h1 class=text-center>REGITRATION FORM</h1>
+                    <form  class="form-gruop text-center" onsubmit ="return Validation()">
+                        <div class="row">
+                                <div class="col-lg-6">
+                                    
+                                    <label >Fist Name:</label>
+                                    <input type="text" id="wfname" name="fname" autocomplete="off" class="form-control" placeholder="Enter your fist name">
+                                    <span id="wsfname" class ="text-danger font-weight-bold "></span>
+                                
+                                </div>
+                                    <div class="col-lg-6">   
+                                    <label >List Name:</label>
+                                    <input type="text" id="wlname" autocomplete="off" name="lname" class="form-control" placeholder="Enter your list name">
+                                    <span id="wslname" class ="text-danger font-weight-bold "></span>
+                                </div>
+
+                        </div>
+                        <br>
+                        <label >E-mail:</label>
+                        <input type="email" id="wemail" autocomplete="off" name="email" class="form-control"  placeholder="Enter your email adress">
+                        <span id="wsemail" class ="text-danger font-weight-bold "></span>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-6">
+  
+                                <label >Password:</label>
+                                <input type="password" id="wpassword" autocomplete="off" name="password" class="form-control" placeholder="Enter your password">
+                                <span id="wsfpassword" class ="text-danger font-weight-bold "></span>
+                            </div>
+                                <div class="col-lg-6">   
+                                <label >Re-type password:</label>
+                                <input type="password" id="wre-password" autocomplete="off" name="re-password" class="form-control" placeholder="Re-type again">
+                                <span id="wsre-password" class ="text-danger font-weight-bold "></span>
+                            </div>
+
+                    </div> 
+                    <br>
+                    
+                    <label >Country:</label>
+                    <input type="text" id="wcountry" autocomplete="off" name="country" class="form-control"  placeholder="Enter your country">
+                    <span id="wscountry" class ="text-danger font-weight-bold "></span>
+                    <br>
+                    <label >Birth day:</label>
+                    <input type="date" id="wbday" autocomplete="off" name="bday" class="form-control"  placeholder="Enter your birth day">
+                    <span id="wsbday" class ="text-danger font-weight-bold "></span>
+                    <br>
+                    <label >Phone number:</label>
+                    <input type="number" id="wpnumber" autocomplete="off" name="pnumber" class="form-control"  placeholder="Enter your phone number">
+                    <span id="wspnumber" class ="text-danger font-weight-bold "></span>
+                    <br>
+                    <select class="form-control" id="gender">
+                        <option >Choose gender</option>
+                        <option >male</option>
+                        <option >female</option>
+                        <option >others</option>
+                        
+                    </select>
+                    <br>
+                    <input type="submit" onclick="myFun2()" value="submit" name="submit" class="btn btn-primary btn-block btn-lg ">
+                </form>
+                </div>
+
+            </div>
+            <div class="col-lg-3"></div>
+
+        </div>
+    </div>
+
+    
+<footer class="page-footer font-small mdb-color #00695c ">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left ">
+
+        <!-- Grid row -->
+        <div class="row ">
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1 ">
+
+                <!-- Content -->
+                <h5 class="font-weight-bold text-uppercase mb-4 " style="color: rgb(243, 234, 234); ">TERMS AND CONDIONS</h5>
+                <p class="p-color " style="color: antiquewhite; ">Any songs or article in the web site sinhalalanka.com can be removed in any time due to the request of relevant singer or producer of the song.</p>
+            </div>
+
+            <!-- Grid column -->
+            <hr class="clearfix w-100 d-md-none ">
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1 ">
+                <!-- Contact details -->
+                <h5 class="font-weight-bold text-uppercase mb-4 " style="color: white; ">Address</h5>
+                <ul class=" list-unstyled ">
+                    <li>
+                        <p style="color: antiquewhite; "><i class="fa fa-home mr-3 "></i>No 28,Baththaramulla,Sri Lanka.
+                        </p>
+                    </li>
+                    <li>
+                        <p style="color: antiquewhite; "><i class="fa fa-envelope mr-3 "></i>info@sinhalalanka.com</p>
+                    </li>
+                    <li>
+                        <p style="color: antiquewhite; "><i class="fa fa-phone mr-3 "></i>0716397397/0776348590</p>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Grid column -->
+            <hr class="clearfix w-100 d-md-none ">
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 text-center mx-auto my-4 ">
+                <!-- Social buttons -->
+                <h5 class="font-weight-bold text-uppercase mb-4 " style="color: white; ">Follow Us</h5>
+                <!-- Facebook --><a type=" button " class="btn-floating btn-fb " style="color: antiquewhite; "><i class="fa fa-facebook-f "></i></a>
+                <!-- Twitter --><a type="button " class="btn-floating btn-tw " style="color: antiquewhite; "><i class="fa fa-twitter "></i></a>
+                <!-- Google+--><a type="button " class="btn-floating btn-gplus " style="color: antiquewhite; "><i class="fa fa-google-plus-g "></i></a>
+                <!-- Dribbble --><a type="button " class="btn-floating btn-dribbble " style="color: antiquewhite; "><i class="fa fa-dribbble "></i></a></div>
+            <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+    <!-- Copyright -->
+    <!----<div class="footer-copyright text-center py-3 ">© 2020 Copyright : <a href="https://mdbootstrap.com/ ">MDBootstrap.com</a></div>--->
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+
+
+    <script>
+
+    function myFun2(){
+        swal("Reset","Form reset successed...!!","success")
+    }
+
+        function Validation(){
+
+            var name = document.getElementById('wfname').value;
+            var lname = document.getElementById('wlname').value;
+            var email = document.getElementById('wemail').value;
+            var password = document.getElementById('wpassword').value;
+            var repassword = document.getElementById('wre-password').value;
+            var country = document.getElementById('wcountry').value;
+            var bday = document.getElementById('wbday').value;
+            var pnumber = document.getElementById('wpnumber').value;
+
+
+            if(name == ""){
+
+                document.getElementById('wsfname').innerHTML = "**plese fill the fistname";
+                return false;
+            }
+
+            if((name.length < 3) || (name.length > 10)){
+
+                document.getElementById('wsfname').innerHTML = "**plese fill the fistname bitween 3 and 10 character";
+                return false;
+
+            }
+
+            if(!isNaN(name)){
+
+                document.getElementById('wsfname').innerHTML = "**plese fill the username as character";
+                return false;
+
+            }
+
+
+
+            
+            if( lname== ""){
+
+                document.getElementById('wslname').innerHTML = "**plese fill the lastname";
+                return false;
+            }
+
+            if((lname.length < 3) || (lname.length > 10)){
+
+                document.getElementById('wslname').innerHTML = "**plese fill the lastname bitween 3 and 10 character";
+                return false;
+
+            }
+
+            if(!isNaN(name)){
+
+                document.getElementById('wsfname').innerHTML = "**plese fill the username as character";
+                return false;
+
+            }
+
+
+
+
+
+            if(email == ""){
+
+                document.getElementById('wsemail').innerHTML = "**plese fill the email address";
+                return false;
+            }
+
+
+            if(email.indexOf('@') <=0 ){
+
+                document.getElementById('wsemail').innerHTML = "**plese fill the email address proper format @";
+                return false;
+
+
+            }
+
+
+            if((email.charAt(email.length - 4) != '.' ) && (email.charAt(email.length - 3) != '.' )){
+
+                document.getElementById('wsemail').innerHTML = "**plese fill the email address proper format .";
+                return false;
+
+
+
+            }
+
+
+
+
+            if(password == ""){
+
+                document.getElementById('wsfpassword').innerHTML = "**plese fill the password";
+                return false;
+            }
+
+            if((password.length < 5) || (password.length > 20)){
+
+                document.getElementById('wsfpassword').innerHTML = "**plese fill the password bitween 5 and 20 ";
+                return false;
+
+            }
+            if(password!=repassword){
+
+                document.getElementById('wsre-password').innerHTML = "** password are not matching ";
+                return false;
+
+            }
+
+
+
+
+
+            if(repassword == ""){
+
+                document.getElementById('wsre-password').innerHTML = "**plese fill the comfirm password";
+                return false;
+            }
+
+            if(country == ""){
+
+                document.getElementById('wscountry').innerHTML = "**plese fill the country";
+                return false;
+            }
+
+
+            if(bday == ""){
+
+                document.getElementById('wsbday').innerHTML = "**plese fill the birth day";
+                return false;
+            }
+
+            if(pnumber == ""){
+
+                document.getElementById('wspnumber').innerHTML = "**plese fill the phone number";
+                return false;
+            }
+
+            if(pnumber.length!=10){
+
+                document.getElementById('wspnumber').innerHTML = "**phone number should be 10 digit";
+                return false;
+
+            }
+
+            if(isNaN(pnumber)){
+
+                document.getElementById('wspnumber').innerHTML = "**mobile number should contain only digit";
+                return false;
+
+            }
+
+
+
+
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="contact.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+       
+        <!---------alert box--------->
+        <script>
+          function validation(){
+    var fname = document.getElementById("fname").value;
+    var lname = document.getElementById("lname").value;
+    var phone = document.getElementById("phone").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+    var error_message = document.getElementById("error_message");
+
+    error_message.style.padding = "10px";
+
+    var text;
+    if(fname.length < 5){
+    text = "Please Enter the required details";
+    error_message.innerHTML = text;
+    return false;
+    }
+    if(lname.length < 5){
+    text = "Please Enter Last name";
+    error_message.innerHTML = text;
+    return false;
+    }
+    if(isNaN(phone) || phone.length != 10){
+    text = "Please Enter valid Phone Number";
+    error_message.innerHTML = text;
+    return false;
+    }
+    if(email.indexOf("@") == -1 || email.length < 6){
+    text = "Please Enter valid Email";
+    error_message.innerHTML = text;
+    return false;
+    }
+    if(message.length <= ""){
+    text = "Please Enter Your message";
+    error_message.innerHTML = text;
+    return false;
+    }
+alert("Your message send successfully!");
+return true;
+}
+      </script>
+        
+    </head>
+    <body>
+        <!-----Nav bar------>
+        <section id="nav-bar">
+          <!-- Image and text -->
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+              <div class="container">
+                  <a class="navbar-brand" href="index.html"><img src="img/2.png" width="80" height="60" alt="" loading="lazy">Sinhalalanaka </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarResponsive">
+                      <ul class="navbar-nav ml-auto">
+                          <li class="nav-item ">
+                              <a class="nav-link" href="index.html">Home</a>
+                          </li>
+                          <li class=" nav-item">
+                              <a class="nav-link " href="songs.html">Sinhala Songs</a>
+                          </li>
+                          <li class=" nav-item">
+                              <a class="nav-link " href="page01.html">Picture Window</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link " href="friendsclub.html">Firends Club</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link " href="greeting cards.html">Greeting Cards</a>
+                          </li>
+                          <li class=" nav-item">
+                              <a class="nav-link " href="Sadaham sisila.html">Sadaham Sisila</a>
+                          </li>
+                          <li class="nav-item active">
+                              <a class="nav-link " href="contact us.html ">Contact Us</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link " href="media.html">Radio-Tv</a>
+                          </li>
+                          <li class=" nav-item">
+                              <a class="nav-link " href="http://www.google.com ">Search</a>
+                          </li>
+                      </ul>
+                  </div>
+  
+          </nav>
+      </section>
+        <!--------Contact form------------>
+        <section id="contact">
+            <div class="container">
+                <h1>CONTACT US</h1>
+                <div id="error_message"></div>
+                <div class="row">
+                <div class="col-md-6">
+                  <form class="contact-form" onsubmit="return validation();">
+                        <div class="form-group">
+                            <input type="text" id="fname" class="form-control" placeholder="Enter your first name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="lname" class="form-control" placeholder="Enter your last name">
+                        </div>
+                        <div class="form-group">
+                            <input type="phone" id="phone"class="form-control" placeholder="Enter your contact number" >
+                        </div>
+                        <div class="form-group">
+                            <input type="email"  id="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <textarea  class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+                        </div class=btn>
+                        <button type="submit" class="btn btn-primary" name="submit"value="submit">SEND MESSAGE
+                        </button>
+                    </form>
+                </div>
+                <div class="col-md-6 contact-info">
+                    <div class="follow"><i class="fa fa-envelope"></i><b>Email Address:</b>info@sinhalalanka.com</div>
+                    <div class="follow"><i class="fa fa-phone"></i><b>Contact number:</b>0094716397397 / 0094776348590</div>
+                    <div class="follow"><i class="fa fa-comment"></i><b>Message:</b> +94716397397</div>
+                    <div class="follow"><label><b>Message:</b></label>
+                        <a href="https://www.facebook.com/sinhalalankacom/"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fsinhalalanka.com%2F&ref_src=twsrc%5Etfw&screen_name=sinhalalanka&tw_p=followbutton"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+
+                        </div>
+                </div>
+                </div>
+            </div>
+                
+        </section>
+       
+        <!-------footer---------->
+        <footer class="page-footer font-small mdb-color #00695c ">
+
+          <!-- Footer Links -->
+          <div class="container text-center text-md-left ">
+      
+              <!-- Grid row -->
+              <div class="row ">
+      
+                  <!-- Grid column -->
+                  <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1 ">
+      
+                      <!-- Content -->
+                      <h5 class="font-weight-bold text-uppercase mb-4 " style="color: white; ">TERMS AND CONDIONS</h5>
+                      <p class="p-color " style="color: antiquewhite; ">Any songs or article in the web site sinhalalanka.com can be removed in any time due to the request of relevant singer or producer of the song.</p>
+                  </div>
+      
+                  <!-- Grid column -->
+                  <hr class="clearfix w-100 d-md-none ">
+                  <!-- Grid column -->
+                  <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1 ">
+                      <!-- Contact details -->
+                      <h5 class="font-weight-bold text-uppercase mb-4 " style="color: white; ">Address</h5>
+                      <ul class=" list-unstyled ">
+                          <li>
+                              <p style="color: antiquewhite; "><i class="fa fa-home mr-3 "></i>No 28,Baththaramulla,Sri Lanka.
+                              </p>
+                          </li>
+                          <li>
+                              <p style="color: antiquewhite; "><i class="fa fa-envelope mr-3 "></i>info@sinhalalanka.com</p>
+                          </li>
+                          <li>
+                              <p style="color: antiquewhite; "><i class="fa fa-phone mr-3 "></i>0716397397/0776348590</p>
+                          </li>
+      
+                      </ul>
+                  </div>
+                  <!-- Grid column -->
+                  <hr class="clearfix w-100 d-md-none ">
+                  <!-- Grid column -->
+                  <div class="col-md-2 col-lg-2 text-center mx-auto my-4 ">
+                      <!-- Social buttons -->
+                      <h5 class="font-weight-bold text-uppercase mb-4 " style="color: white; ">Follow Us</h5>
+                      <!-- Facebook --><a type=" button " class="btn-floating btn-fb " style="color: antiquewhite; "><i class="fa fa-facebook-f "></i></a>
+                      <!-- Twitter --><a type="button " class="btn-floating btn-tw " style="color: antiquewhite; "><i class="fa fa-twitter "></i></a>
+                      <!-- Google+--><a type="button " class="btn-floating btn-gplus " style="color: antiquewhite; "><i class="fa fa-google-plus-g "></i></a>
+                      <!-- Dribbble --><a type="button " class="btn-floating btn-dribbble " style="color: antiquewhite; "><i class="fa fa-dribbble "></i></a></div>
+                  <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+          </div>
+          <!-- Footer Links -->
+          <!-- Copyright -->
+          <!----<div class="footer-copyright text-center py-3 ">© 2020 Copyright : <a href="https://mdbootstrap.com/ ">MDBootstrap.com</a></div>--->
+          <!-- Copyright -->
+      </footer>
+    </body>
+</html>

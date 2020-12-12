@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+body h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -70px;
+    top: -40px;
+    
+}
+h2
+{
+    position: relative;
+    margin: 0;
+    font-size: 4em;
+    font-weight: 900;
+    color: #000;
+    z-index: 1;
+    overflow: hidden;
+}
+h2:before
+{
+    content: '';
+    position: absolute;
+    left: 110%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(90deg,transparent 0%,#fff 5%,#fff 100%);
+    animation: animate 505s linear forwards;
+}
+
+h2 span{
+    color: #ff022c;
+}
+section {
+    padding: 120px 0 0;
+    margin-top: 1px;
+}
+
+.box {
+    position: relative;
+    width: 350px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    transition: .5s;
+    margin: 16px;
+}
+
+.box:hover {
+    transform: translateY(-30px);
+    box-shadow: 0 50px 50px rgba(0, 0, 0, .5);
+}
+
+.box .imgBox {
+    position: relative;
+}
+
+.box .imgBox img {
+    max-width: 100%;
+    max-height: 100%;
+    transition: .5s;
+}
+
+.box:hover .imgBox img {
+    opacity: .5;
+    transform: translateY(-20px);
+}
+
+.box .content {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: .5s;
+    opacity: 0;
+}
+
+.box:hover .content {
+    bottom: 0px;
+    opacity: 1;
+}
+
+.box .content h3 {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 100;
+}
+
+.box .content p {
+    font-size: 10px;
+    color: #fff;
+    font-weight: 200;
+}
+
+.box .content .btnD {
+    border: none;
+    background: #000d10;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 20px;
+    font-weight: 200;
+    transition: .5s;
+}
+
+.box .content .btnD:hover {
+    background: #fff;
+    color: #262626;
+}

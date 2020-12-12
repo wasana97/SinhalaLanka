@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="search2.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!---------------validation----------->
+        <script>
+            function validation(){
+  var fname = document.getElementById("fname").value;
+  var lname = document.getElementById("lname").value;
+  var gender = document.getElementById("gender").value;
+  var country = document.getElementById("country").value;
+  var error_message = document.getElementById("error_message");
+  
+  error_message.style.padding = "10px";
+  
+  var text;
+  if(fname.length < 5){
+    alert("Please Enter at least one value");
+    return true;
+  }
+  else if(lname.length < 5){
+    alert("Succesfuly");
+    return true;
+  }
+   if(gender.length < 5){
+    alert("Please Enter at least one value");
+    return true;
+  }
+  else if(country.length < 5){
+    alert("Succesfuly");
+    return true;
+  }
+  }
+        </script>
+
+    </head>
+
+    <body>
+       <!-----Nav bar------>
+       <section id="nav-bar">
+        <!-- Image and text -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"><img src="img/2.png" width="80" height="60" alt="" loading="lazy">Sinhalalanaka </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class=" nav-item">
+                            <a class="nav-link " href="songs.html">Sinhala Songs</a>
+                        </li>
+                        <li class=" nav-item">
+                            <a class="nav-link " href="# ">Picture Window</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link " href="# ">Firends Club</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Greeting Cards</a>
+                        </li>
+                        <li class=" nav-item ">
+                            <a class="nav-link " href="file:///C:/Users/USER/Desktop/HCI%20Finale/dharma%20deshana.html ">Sadaham Sisila</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="file:///C:/Users/USER/Desktop/HCI%20Finale/contact%20us.html?submit=submit# ">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="# ">Radio-Tv</a>
+                        </li>
+                        <li class=" nav-item">
+                            <a class="nav-link " href="# ">Search</a>
+                        </li>
+                    </ul>
+                </div>
+
+        </nav>
+    </section>
+    <div class="wrapper">
+      <div class="header">
+          <div class="title">
+              <label class="logo">FRIENDS CLUB</label>
+             <ul>
+                 <li><a class="active" href="registration.html">Register</a></li>
+                 <li><a href="#">Members Area</a></li>
+                 <li><a href="#">Feed Back</a></li>
+                 <li><a href="#">Statistics</a></li>
+                 <li><a href="#">Search</a></li>
+             </ul>
+          </div>
+          
+      </div>
+   
+      <!-----------search form-------->
+            <div class="wrappe">
+              <h1> SEARCH</h1>
+                <div id="error_message"></div>
+                <form id="myform" onsubmit="return validation();">
+                  
+
+                
+                <div class="input_field">
+                    <label><b>Frist Name</b></label>
+                      <input type="text" placeholder=" Your Name" class="form-control" id="fname">
+               </div>
+
+               <div class="input_field">
+                <label><b>Last Name</b></label>
+                  <input type="text" placeholder=" Your Name" class="form-control" id="lname">
+              </div>
+
+              <div class="input_field">
+                <label><b>Gender</b></label>
+                <select name="hero" class="form-control" id="gender" class="input">
+                    <option value="0">Unspecified</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                </select>
+              </div>
+
+              <div class="input_field">
+                <label><b>Country</b></label>
+                <select name="purpose" class="form-control" id="country" class="input">
+                    <option value="0">Unspecified</option>
+                    <option value="1">Australia</option>
+                    <option value="2">Aegentina</option>
+                    <option value="3">China</option>
+                    <option value="4">India</option>
+                    <option value="5">Rashia</option>
+                    <option value="6">America</option>
+                    <option value="7">Singapor</option>
+                    <option value="8">Thailanth</option>
+                    <option value="9">Sri Lanka</option>
+                    <option value="9">Malayasiya</option>
+                </select>
+             </div>
+                
+             <div class ="center">
+                  <button type="submit" id="submit"class="btn btn-primary">Search
+                  </button>
+            </div>
+
+           </form>
+         </div>
+        </div>
+        <!-------footer---------->
+        <footer class="page-footer font-small mdb-color #00695c ">
+
+          <!-- Footer Links -->
+          <div class="container text-center text-md-left ">
+      
+              <!-- Grid row -->
+              <div class="row ">
+      
+                  <!-- Grid column -->
+                  <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1 ">
+      
+                      <!-- Content -->
+                      <h5 class="font-weight-bold text-uppercase mb-4 " style="color: white; ">TERMS AND CONDIONS</h5>
+                      <p class="p-color " style="color: antiquewhite; ">Any songs or article in the web site sinhalalanka.com can be removed in any time due to the request of relevant singer or producer of the song.</p>
+                  </div>
+      
+                  <!-- Grid column -->
+                  <hr class="clearfix w-100 d-md-none ">
+                  <!-- Grid column -->
+                  <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1 ">
+                      <!-- Contact details -->
+                      <h5 class="font-weight-bold text-uppercase mb-4 " style="color: white; ">Address</h5>
+                      <ul class=" list-unstyled ">
+                          <li>
+                              <p style="color: antiquewhite; "><i class="fa fa-home mr-3 "></i>No 28,Baththaramulla,Sri Lanka.
+                              </p>
+                          </li>
+                          <li>
+                              <p style="color: antiquewhite; "><i class="fa fa-envelope mr-3 "></i>info@sinhalalanka.com</p>
+                          </li>
+                          <li>
+                              <p style="color: antiquewhite; "><i class="fa fa-phone mr-3 "></i>0716397397/0776348590</p>
+                          </li>
+      
+                      </ul>
+                  </div>
+                  <!-- Grid column -->
+                  <hr class="clearfix w-100 d-md-none ">
+                  <!-- Grid column -->
+                  <div class="col-md-2 col-lg-2 text-center mx-auto my-4 ">
+                      <!-- Social buttons -->
+                      <h5 class="font-weight-bold text-uppercase mb-4 " style="color: white; ">Follow Us</h5>
+                      <!-- Facebook --><a type=" button " class="btn-floating btn-fb " style="color: antiquewhite; "><i class="fa fa-facebook-f "></i></a>
+                      <!-- Twitter --><a type="button " class="btn-floating btn-tw " style="color: antiquewhite; "><i class="fa fa-twitter "></i></a>
+                      <!-- Google+--><a type="button " class="btn-floating btn-gplus " style="color: antiquewhite; "><i class="fa fa-google-plus-g "></i></a>
+                      <!-- Dribbble --><a type="button " class="btn-floating btn-dribbble " style="color: antiquewhite; "><i class="fa fa-dribbble "></i></a></div>
+                  <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+          </div>
+          <!-- Footer Links -->
+          <!-- Copyright -->
+          <!----<div class="footer-copyright text-center py-3 ">© 2020 Copyright : <a href="https://mdbootstrap.com/ ">MDBootstrap.com</a></div>--->
+          <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+      
+    </body>
+</html>

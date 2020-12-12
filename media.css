@@ -1,0 +1,57 @@
+
+
+   
+
+    /*-----------navigation---------*/
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar-nav li a {
+        float: right;
+        text-align: right;
+    }
+    
+    /*----foter---*/
+    
+    .mdb-color {
+        background-color: #0d0d0e;
+    }
+    
+    .p-color {
+        color: #96e2f5;
+    }
+   
+    
+    @-webkit-keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+.carousel-item {
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
